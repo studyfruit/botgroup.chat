@@ -2,8 +2,8 @@
 export const modelConfigs = [
   {
     model: "Qwen/Qwen3-8B",
-    apiKey: "DASHSCOPE-API-KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://cloud.siliconflow.cn/"
+    apiKey: "SILICONFLOW-API-KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://cloud.siliconflow.cn//playground/chat"
   },
   {
     model: "qwen-plus",
