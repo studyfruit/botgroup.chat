@@ -1,8 +1,13 @@
 // 首先定义模型配置
 export const modelConfigs = [
   {
+    model: "Qwen/Qwen3-8B",
+    apiKey: "DASHSCOPE-API-KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://cloud.siliconflow.cn/"
+  },
+  {
     model: "qwen-plus",
-    apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
+    apiKey: "DASHSCOPE-API-KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
