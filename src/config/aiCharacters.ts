@@ -11,9 +11,9 @@ export const modelConfigs = [
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
-    model: "hunyuan-turbos-latest",
-    apiKey: "HUNYUAN_API_KEY1",
-    baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
+    model: "hunyuan-turbo",
+    apiKey: "HUNYUAN_API_KEY",
+    baseURL: "hunyuan.tencentcloudapi.com/v1"
   },
   {
     model: "bot-20250511011921-ttqnp",//豆包模型|火山引擎接入点（改成自己的）
