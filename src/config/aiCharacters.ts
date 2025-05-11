@@ -1,3 +1,4 @@
+
 // 首先定义模型配置
 export const modelConfigs = [
   {
@@ -11,14 +12,14 @@ export const modelConfigs = [
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
-    model: "hunyuan-turbo",
-    apiKey: "HUNYUAN_API_KEY",
-    baseURL: "hunyuan.tencentcloudapi.com/v1"
+    model: "hunyuan-turbos-latest",
+    apiKey: "HUNYUAN_API_KEY1",
+    baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "bot-20250511011921-ttqnp",//豆包模型|火山引擎接入点（改成自己的）
+    model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
     apiKey: "ARK_API_KEY",
-    baseURL: "https://ark.cn-beijing.volces.com/api/v3/bots/chat/completions"
+    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
     model: "ep-20250306223646-szzkw",//deepseekv火山引擎接入点（改成自己的）
@@ -29,6 +30,11 @@ export const modelConfigs = [
     model: "glm-4-air",
     apiKey: "GLM_API_KEY",
     baseURL: "https://open.bigmodel.cn/api/paas/v4/"
+  },
+  {
+    model: "qwen-turbo",//调度模型
+    apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "deepseek-chat",
@@ -243,4 +249,3 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
     }
   ];
 }
-
