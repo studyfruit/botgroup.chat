@@ -5,11 +5,11 @@ export const modelConfigs = [
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
-  // {
-  //   model: "deepseek-v3-250324",
-  //   apiKey: "ARK_API_KEY",
-  //   baseURL: "https://ark.cn-beijing.volces.com/api/v3"
-  // },
+  {
+    model: "deepseek-v3-250324",
+    apiKey: "ARK_API_KEY",
+    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+  },
   {
     model: "hunyuan-turbos-latest",
     apiKey: "HUNYUAN_API_KEY1",
