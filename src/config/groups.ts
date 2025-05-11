@@ -14,7 +14,7 @@ export const groups: Group[] = [
     description: '群消息关注度权重：“user”的最新消息>其他成员最新消息>“user”的历史消息>其他成员历史消息>',
     members: [ 'ai7' ,'ai6', 'ai4'],
     isGroupDiscussionMode: false
-  },
+  }
   /*
   {
     id: 'group2',
