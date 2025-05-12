@@ -6,11 +6,11 @@ export const modelConfigs = [
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
-  {
-    model: "deepseek-v3-250324",
-    apiKey: "ARK_API_KEY",
-    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
-  },
+  // {
+  //   model: "deepseek-v3-250324",
+  //   apiKey: "ARK_API_KEY",
+  //   baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+  // },
   {
     model: "hunyuan-turbos-latest",
     apiKey: "HUNYUAN_API_KEY1",
@@ -26,26 +26,21 @@ export const modelConfigs = [
     apiKey: "ARK_API_KEY1",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
-  {
-    model: "glm-4-air",
-    apiKey: "GLM_API_KEY",
-    baseURL: "https://open.bigmodel.cn/api/paas/v4/"
-  },
-  {
-    model: "qwen-turbo",//调度模型
-    apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
-  },
+  // {
+  //   model: "glm-4-air",
+  //   apiKey: "GLM_API_KEY",
+  //   baseURL: "https://open.bigmodel.cn/api/paas/v4/"
+  // },
   {
     model: "deepseek-chat",
     apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://api.deepseek.com/v1"
   },
-  {
-    model: "moonshot-v1-8k",
-    apiKey: "KIMI_API_KEY",
-    baseURL: "https://api.moonshot.cn/v1"
-  },
+  // {
+  //   model: "moonshot-v1-8k",
+  //   apiKey: "KIMI_API_KEY",
+  //   baseURL: "https://api.moonshot.cn/v1"
+  // },
   {
     model: "ernie-3.5-128k",
     apiKey: "BAIDU_API_KEY",
@@ -125,7 +120,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai5', 
       name: "豆包", 
       personality: "doubao",
-      model: modelConfigs[3].model,
+      model: modelConfigs[2].model,
       avatar: "/img/doubao_new.png",
       custom_prompt: `你是一个名叫"豆包"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["聊天", "文字游戏", "学生", "娱乐"]
@@ -143,7 +138,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai7', 
       name: "DeepSeek", 
       personality: "deepseek-V3",
-      model: modelConfigs[7].model,
+      model: modelConfigs[4].model,
       avatar: "/img/ds.svg",
       custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理", "编程", "文字游戏", "数学", "信息总结", "聊天"]
