@@ -32,7 +32,7 @@ export const modelConfigs = [
   //   baseURL: "https://open.bigmodel.cn/api/paas/v4/"
   // },
   {
-    model: "deepseek-chat",
+    model: "deepseek-reasoner",
     apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://api.deepseek.com/v1"
   },
