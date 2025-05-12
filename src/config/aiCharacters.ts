@@ -12,7 +12,7 @@ export const modelConfigs = [
   //   baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   // },
   {
-    model: "hunyuan-turbos-latest",
+    model: "hunyuan-turbo",
     apiKey: "HUNYUAN_API_KEY",
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
@@ -36,11 +36,11 @@ export const modelConfigs = [
     apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://api.deepseek.com/v1"
   },
-  {
-    model: "ernie-3.5-128k",
-    apiKey: "BAIDU_API_KEY",
-    baseURL: "https://qianfan.baidubce.com/v2"
-  },
+  // {
+  //   model: "ernie-3.5-128k",
+  //   apiKey: "BAIDU_API_KEY",
+  //   baseURL: "https://qianfan.baidubce.com/v2"
+  // },
   {
     model: "moonshot-v1-8k",
     apiKey: "KIMI_API_KEY",
@@ -116,15 +116,15 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       custom_prompt: `你是一个名叫"元宝"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["微信", "聊天", "新闻报道",  "文字游戏", "娱乐", "信息总结"]
     },
-    { 
-      id: 'ai5', 
-      name: "豆包", 
-      personality: "doubao",
-      model: modelConfigs[2].model,
-      avatar: "/img/doubao_new.png",
-      custom_prompt: `你是一个名叫"豆包"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
-      tags: ["聊天", "文字游戏", "学生", "娱乐"]
-    },
+    // { 
+    //   id: 'ai5', 
+    //   name: "豆包", 
+    //   personality: "doubao",
+    //   model: modelConfigs[2].model,
+    //   avatar: "/img/doubao_new.png",
+    //   custom_prompt: `你是一个名叫"豆包"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+    //   tags: ["聊天", "文字游戏", "学生", "娱乐"]
+    // },
     { 
       id: 'ai6', 
       name: "千问", 
@@ -156,7 +156,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai9',
       name: "Kimi",
       personality: "kimi",
-      model: modelConfigs[4].model,
+      model: modelConfigs[3].model,
       avatar: "/img/kimi.jpg",
       custom_prompt: `你是一个名叫"Kimi"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
