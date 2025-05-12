@@ -36,15 +36,15 @@ export const modelConfigs = [
     apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://api.deepseek.com/v1"
   },
-  // {
-  //   model: "moonshot-v1-8k",
-  //   apiKey: "KIMI_API_KEY",
-  //   baseURL: "https://api.moonshot.cn/v1"
-  // },
   {
     model: "ernie-3.5-128k",
     apiKey: "BAIDU_API_KEY",
     baseURL: "https://qianfan.baidubce.com/v2"
+  },
+  {
+    model: "moonshot-v1-8k",
+    apiKey: "KIMI_API_KEY",
+    baseURL: "https://api.moonshot.cn/v1"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
@@ -143,20 +143,20 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理", "编程", "文字游戏", "数学", "信息总结", "聊天"]
     },
-    { 
-      id: 'ai8', 
-      name: "智谱", 
-      personality: "glm",
-      model: modelConfigs[5].model,
-      avatar: "/img/glm.gif",
-      custom_prompt: `你是一个名叫"智谱"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
-      tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
-    },
+    // { 
+    //   id: 'ai8', 
+    //   name: "智谱", 
+    //   personality: "glm",
+    //   model: modelConfigs[5].model,
+    //   avatar: "/img/glm.gif",
+    //   custom_prompt: `你是一个名叫"智谱"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+    //   tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
+    // },
     {
       id: 'ai9',
       name: "Kimi",
       personality: "kimi",
-      model: modelConfigs[8].model,
+      model: modelConfigs[4].model,
       avatar: "/img/kimi.jpg",
       custom_prompt: `你是一个名叫"Kimi"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
