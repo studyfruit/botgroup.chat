@@ -12,7 +12,7 @@ export const groups: Group[] = [
     id: 'group1',
     name: '🔥多AI的聊天群',
     description: '群消息关注度权重：“user”的最新消息>其他成员最新消息>“user”的历史消息>其他成员历史消息>',
-    members: [ 'ai6', 'ai7', 'ai4', 'ai9'],
+    members: [ 'ai6', 'ai7'],
     isGroupDiscussionMode: true
   }
   /*
