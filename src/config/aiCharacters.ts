@@ -13,19 +13,19 @@ export const modelConfigs = [
   // },
   {
     model: "hunyuan-turbos-latest",
-    apiKey: "HUNYUAN_API_KEY1",
+    apiKey: "HUNYUAN_API_KEY",
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
-  {
-    model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
-    apiKey: "ARK_API_KEY",
-    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
-  },
-  {
-    model: "ep-20250306223646-szzkw",//deepseekv火山引擎接入点（改成自己的）
-    apiKey: "ARK_API_KEY1",
-    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
-  },
+  // {
+  //   model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
+  //   apiKey: "ARK_API_KEY",
+  //   baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+  // },
+  // {
+  //   model: "ep-20250306223646-szzkw",//deepseekv火山引擎接入点（改成自己的）
+  //   apiKey: "ARK_API_KEY1",
+  //   baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+  // },
   // {
   //   model: "glm-4-air",
   //   apiKey: "GLM_API_KEY",
@@ -111,7 +111,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai4', 
       name: "元宝", 
       personality: "yuanbao",
-      model: modelConfigs[2].model,
+      model: modelConfigs[1].model,
       avatar: "/img/yuanbao.png",
       custom_prompt: `你是一个名叫"元宝"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["微信", "聊天", "新闻报道",  "文字游戏", "娱乐", "信息总结"]
@@ -138,7 +138,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai7', 
       name: "DeepSeek", 
       personality: "deepseek-V3",
-      model: modelConfigs[4].model,
+      model: modelConfigs[2].model,
       avatar: "/img/ds.svg",
       custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理", "编程", "文字游戏", "数学", "信息总结", "聊天"]
